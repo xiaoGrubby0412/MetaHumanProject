@@ -11,16 +11,16 @@ ModelImporter:
     second: Armature|Running
   - first:
       74: 1119441826774703001
-    second: Armature|Sit To Stand
+    second: Armature|SitToStand
   - first:
       74: 1889602709898029310
     second: Armature|Sitting
   - first:
       74: -7541437396693234834
-    second: Armature|Sitting Idle
+    second: Armature|SittingIdle
   - first:
       74: -318606371020927318
-    second: Armature|Stand To Sit
+    second: Armature|StandToSit
   - first:
       74: 8349542763059015795
     second: Armature|Walk
@@ -227,7 +227,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Sit To Stand
+      name: Armature|SitToStand
       takeName: Armature|Sit To Stand
       internalID: 0
       firstFrame: 0
@@ -285,7 +285,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Sitting Idle
+      name: Armature|SittingIdle
       takeName: Armature|Sitting Idle
       internalID: 0
       firstFrame: 0
@@ -314,7 +314,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Stand To Sit
+      name: Armature|StandToSit
       takeName: Armature|Stand To Sit
       internalID: 0
       firstFrame: 0

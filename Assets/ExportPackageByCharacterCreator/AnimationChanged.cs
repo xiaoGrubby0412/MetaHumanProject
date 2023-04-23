@@ -30,18 +30,18 @@ public class AnimationChanged : MonoBehaviour
     private void PlayerAnimationByState(AnimationState state)
     {
         string aniName = aniStr + Enum.GetName(typeof(AnimationState), state);
-        if (state == AnimationState.SitToStand)
-        {
-            aniName = "Armature|Sit To Stand";
-        }
-        else if (state == AnimationState.StandToSit)
-        {
-            aniName = "Armature|Stand To Sit";
-        }
-        else if (state == AnimationState.SittingIdle)
-        {
-            aniName = "Armature|Sitting Idle";
-        }
+        //if (state == AnimationState.SitToStand)
+        //{
+        //    aniName = "Armature|Sit To Stand";
+        //}
+        //else if (state == AnimationState.StandToSit)
+        //{
+        //    aniName = "Armature|Stand To Sit";
+        //}
+        //else if (state == AnimationState.SittingIdle)
+        //{
+        //    aniName = "Armature|Sitting Idle";
+        //}
 
         animator.CrossFadeInFixedTime(aniName, 0.25f);
         CurState = state;
