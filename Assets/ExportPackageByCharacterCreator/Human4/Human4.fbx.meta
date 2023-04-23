@@ -29,117 +29,117 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Basic_T_shirts
-    second: {fileID: 2100000, guid: 43d419a7864632543b254cd421ff5d72, type: 2}
+    second: {fileID: 2100000, guid: dd307f35d131c7047a7150525dfd779d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hair_Transparency
-    second: {fileID: 2100000, guid: 097f58777aacc5142aeb20d4acfb0099, type: 2}
+    second: {fileID: 2100000, guid: ffed837803af78845a1e50d4fc10cd39, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Male_Brow_Base_Transparency
-    second: {fileID: 2100000, guid: 1e0888735e49dd742ad476455c608ef9, type: 2}
+    second: {fileID: 2100000, guid: f099b2fc82101584e8941a708c81da54, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Male_Brow_Transparency
-    second: {fileID: 2100000, guid: a2c7ecc2af773ad40923dc14b2a8e98a, type: 2}
+    second: {fileID: 2100000, guid: 14c6418c5961cd04990348b857d35c66, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Scalp_Transparency
-    second: {fileID: 2100000, guid: 0585ca58438fc1c498d55c955ca8b667, type: 2}
+    second: {fileID: 2100000, guid: 03663bc93914e724bb893ee36f552841, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Slim_Jeans
-    second: {fileID: 2100000, guid: 428898f9673bf884eb2bacfc7f23001a, type: 2}
+    second: {fileID: 2100000, guid: 889c797d107b3a844982bf514394a61c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Sport_sneakers
-    second: {fileID: 2100000, guid: cf0b9d5b898bc454fb0774bb2e7e15a4, type: 2}
+    second: {fileID: 2100000, guid: a6d88fdce3bb5d946aeb2127d99cbf47, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Cornea_L
-    second: {fileID: 2100000, guid: 17c5bd076e9f0744f83c59219a3d6541, type: 2}
+    second: {fileID: 2100000, guid: f497bcf5085d08a4c8fb5de51e21aa76, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Cornea_R
-    second: {fileID: 2100000, guid: 6a87f7c1bcf4f684d90e79e0417cfc0d, type: 2}
+    second: {fileID: 2100000, guid: 4e9d36b38aed0b343a1a0a8cdcbcb097, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eye_L
-    second: {fileID: 2100000, guid: 5b3116e1382c30b44a8443de3c03f8d2, type: 2}
+    second: {fileID: 2100000, guid: 70726ea8477561c469980bd443befca6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eye_Occlusion_L
-    second: {fileID: 2100000, guid: d1d841d3e2a53084f8284322cad856c4, type: 2}
+    second: {fileID: 2100000, guid: 9ecc5d9f6872a934e9e27cdf036c51c4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eye_Occlusion_R
-    second: {fileID: 2100000, guid: ff3f2663d8e2a294e87b8a66a6d27b70, type: 2}
+    second: {fileID: 2100000, guid: 89551f7f4194b21479d42931c1fcf04b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eye_R
-    second: {fileID: 2100000, guid: ff8206d6876f33949a99cfd3d7327331, type: 2}
+    second: {fileID: 2100000, guid: b9f95a0d792ce6e48920fbd2f7a2c8e0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Eyelash
-    second: {fileID: 2100000, guid: 7c488b30a23992b4c830f026bfe99c36, type: 2}
+    second: {fileID: 2100000, guid: e8720b133bf74214fb2f5c6bfbe3f118, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Lower_Teeth
-    second: {fileID: 2100000, guid: 614794a0234f210488995a3c62dfbc40, type: 2}
+    second: {fileID: 2100000, guid: c1f577527cf7a7e449ccbb0a83781cdb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Nails
-    second: {fileID: 2100000, guid: dc9892ca3ce5e5f4994d85df329f8e35, type: 2}
+    second: {fileID: 2100000, guid: 31c0e0b2804b5764d9716521a526dac8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Arm
-    second: {fileID: 2100000, guid: 5164ea52d01fa0548a995e8d81e2d7b1, type: 2}
+    second: {fileID: 2100000, guid: 4c435aa564571474b88ce07cc3d05487, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Head
-    second: {fileID: 2100000, guid: ac0b400d723206c4885f6f997c92c061, type: 2}
+    second: {fileID: 2100000, guid: cdc297a52b52ea54d8ed252d3db6e328, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Skin_Leg
-    second: {fileID: 2100000, guid: 1a9e7c456fe911f478d9a12bf4667c76, type: 2}
+    second: {fileID: 2100000, guid: 94e1894e463d1654e94fa95a3f6577ba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Tearline_L
-    second: {fileID: 2100000, guid: 1fbcfada8b3a93b458ba575c0a907759, type: 2}
+    second: {fileID: 2100000, guid: fe9d708cdb7778c43846bfe39e364b16, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Tearline_R
-    second: {fileID: 2100000, guid: 9380109d25222ae48b8baa228a1978b7, type: 2}
+    second: {fileID: 2100000, guid: a20561ef8e1c7684bab1b4aab61d1ae5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Tongue
-    second: {fileID: 2100000, guid: 29aa66c73d1fd1c428bf28463a231481, type: 2}
+    second: {fileID: 2100000, guid: 728180ffdcfd3e143b37c3fd7c6e6acd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Std_Upper_Teeth
-    second: {fileID: 2100000, guid: b63e38b0273d3d04498d4d72abca7b15, type: 2}
+    second: {fileID: 2100000, guid: 7c48ac70c9b9c6945adc584d16a99c19, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -167,7 +167,210 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Running
+      takeName: Armature|Running
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Sit To Stand
+      takeName: Armature|Sit To Stand
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Sitting
+      takeName: Armature|Sitting
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 210
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Sitting Idle
+      takeName: Armature|Sitting Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 129
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Stand To Sit
+      takeName: Armature|Stand To Sit
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 67
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Walk
+      takeName: Armature|Walk
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
