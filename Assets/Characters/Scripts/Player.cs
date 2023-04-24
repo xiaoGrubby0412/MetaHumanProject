@@ -3,35 +3,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Baidu.VR.Zion
+public class Player : MonoBehaviour
 {
-    public class Player : MonoBehaviour
+    public static Player Instance;
+    public Transform trackingOriginTransform;
+    public Transform trackingInterliningTransform;
+    public Transform hmdTransform;
+
+    private PlayerFsmMachine fsmMachine;
+
+    private void Awake()
     {
-        public static Player Instance;
-        public Transform trackingOriginTransform;
-        public Transform trackingInterliningTransform;
-        public Transform hmdTransform;
+        Instance = this;
+    }
 
-        private PlayerFsmMachine fsmMachine;
-        private void Awake()
-        {
-            Instance = this;
-        }
+    private void Start()
+    {
+        fsmMachine = new PlayerFsmMachine();
+    }
 
-        private void Start()
-        {
-            fsmMachine = new PlayerFsmMachine();
-        }
+    private void Update()
+    {
+        fsmMachine.Update();
+    }
 
-        private void Update()
-        {
-            fsmMachine.Update();
-        }
-
-        private void OnDestroy()
-        {
-            fsmMachine.Dispose();
-            Instance = null;
-        }
+    private void OnDestroy()
+    {
+        fsmMachine.Dispose();
+        Instance = null;
     }
 }

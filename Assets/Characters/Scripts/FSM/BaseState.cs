@@ -70,7 +70,7 @@ public class BaseState
     protected virtual void OnDispose()
     {
     }
-    
+
     public void PlayAnimation()
     {
         this.OnPlayAnimation();

@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using Baidu.VR.Zion;
 
 public class Main : MonoBehaviour
 {
@@ -15,7 +14,7 @@ public class Main : MonoBehaviour
         playerObj.transform.position = birthPoint;
         playerObj.transform.localScale = Vector3.one;
         playerObj.transform.rotation = Quaternion.identity;
-        
+
         GameObject.Instantiate(Resources.Load("MainUiPanelCanvas"));
 #if !UNITY_EDITOR
         #if UNITY_ANDROID || UNITY_IOS
