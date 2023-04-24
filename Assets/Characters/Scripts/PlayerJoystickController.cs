@@ -6,24 +6,16 @@ namespace Baidu.VR.Zion
 {
     public class PlayerJoystickController : MonoBehaviour
     {
-        public bool CanRotateAndMove = true;
         public AbstractJoystick moveJoystick;
         //public GPUSkinningPlayerMono mono;
         public Animator animator;
         public float moveSpeed;
         public float moveJoystickLimit;
 
-        public float offset;
-
         //相机距离的物体的最近和最远距离
-        public float minDistance;
-        public float maxDistance;
         public float thirdCamMinHeight;
-
-        public float PixelScalingFactor;
-        public float rotateSpeed;
+        
         public float rotSpeed;
-        public float headRotationLimit;
 
         public float fixedTime;
         public bool needFixGroundPos;
@@ -39,7 +31,6 @@ namespace Baidu.VR.Zion
 
         public bool useGravity;
         public float gravityAccel;
-        public float gravityCurSpeed;
         public bool onGround;
 
         private PlayerThirdCamera _playerThirdCamera = null;
@@ -70,19 +61,12 @@ namespace Baidu.VR.Zion
 
         private void Start()
         {
-            this.CanRotateAndMove = true;
             this.moveSpeed = 10.0f;
             this.moveJoystickLimit = 0.01f;
-            this.offset = 2;
-            //相机距离的物体的最近和最远距离
-            this.minDistance = 0.5f;
-            this.maxDistance = 10;
+
 
             this.thirdCamMinHeight = 0.2f;
-            this.PixelScalingFactor = 5f;
-            this.rotateSpeed = 200.0f;
             this.rotSpeed = 10.0f;
-            this.headRotationLimit = 90.0f;
             this.wallLayer = 1 << LayerMask.NameToLayer("Wall") | 1 << LayerMask.NameToLayer("Ground");
             this.groundLayer = 1 << LayerMask.NameToLayer("Ground");
             this.waterLayer = 1 << LayerMask.NameToLayer("Water");
@@ -95,7 +79,6 @@ namespace Baidu.VR.Zion
             this.fixPlayerPosYMaxDist = 30f;
             this.fixPlayerPosGround = 1f;
             this.gravityAccel = 980f;
-            this.gravityCurSpeed = 0.0f;
             this.onGround = true;
             this.useGravity = true;
 
@@ -288,22 +271,44 @@ namespace Baidu.VR.Zion
         }
 
 
-        private float _animationBlend;
-        private float targetSpeed;
-        public float SpeedChangeRate = 10.0f;
+        // private float _animationBlend;
+        // private float targetSpeed;
+        // public float SpeedChangeRate = 10.0f;
         
         public void StartMove()
         {
-            targetSpeed = 6;
-            // this.animator.SetFloat("Speed", 5);
-            // this.animator.SetFloat("MotionSpeed", 1);
+            //targetSpeed = 6;
+            AnimatorStateInfo curInfo = animator.GetCurrentAnimatorStateInfo(0);
+            AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
+            if (clipInfo.Length > 1)
+            {
+                Debug.LogError("clipInfo.Length > 1");
+            }
+
+            if (clipInfo.Length > 0 && clipInfo[0].clip.name.Equals("Armature|Idle"))
+            {
+                string aniName = "Armature|Running"; 
+                animator.CrossFadeInFixedTime(aniName, 0.1f);
+            }
+
+          
         }
 
         public void StopMove()
         {
-            targetSpeed = 0;
-            // this.animator.SetFloat("Speed", 0);
-            // this.animator.SetFloat("MotionSpeed", 1);
+            //targetSpeed = 0;
+            
+            AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
+            if (clipInfo.Length > 1)
+            {
+                Debug.LogError("clipInfo.Length > 1");
+            }
+
+            if (clipInfo.Length > 0 && clipInfo[0].clip.name.Equals("Armature|Running"))
+            {
+                string aniName = "Armature|Idle"; 
+                animator.CrossFadeInFixedTime(aniName, 0.1f);
+            }
         }
         
 
@@ -488,11 +493,11 @@ namespace Baidu.VR.Zion
                 }
             }
             
-            _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
-            if (_animationBlend < 0.01f) _animationBlend = 0f;
-            
-            this.animator.SetFloat("Speed", _animationBlend);
-            this.animator.SetFloat("MotionSpeed", 1);
+            // _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
+            // if (_animationBlend < 0.01f) _animationBlend = 0f;
+            //
+            // this.animator.SetFloat("Speed", _animationBlend);
+            // this.animator.SetFloat("MotionSpeed", 1);
         }
     }
 }
