@@ -11,15 +11,22 @@ public class Player : MonoBehaviour
     public Transform hmdTransform;
 
     private PlayerFsmMachine fsmMachine;
+    public Animator animator;
 
     private void Awake()
     {
         Instance = this;
+        animator = GetComponentInChildren<Animator>();
     }
 
     private void Start()
     {
         fsmMachine = new PlayerFsmMachine();
+        fsmMachine.AddState(new PlayerStateIdle((int)PlayerFsmMachine.PlayerStateID.Idle));
+        fsmMachine.AddState(new PlayerStateRun((int)PlayerFsmMachine.PlayerStateID.Running));
+        fsmMachine.AddState(new PlayerStateSitting((int)PlayerFsmMachine.PlayerStateID.Sitting));
+        fsmMachine.AddState(new PlayerStateStandToSit((int)PlayerFsmMachine.PlayerStateID.StandToSit));
+        fsmMachine.SetInitState((int)PlayerFsmMachine.PlayerStateID.Idle);
     }
 
     private void Update()
@@ -31,5 +38,13 @@ public class Player : MonoBehaviour
     {
         fsmMachine.Dispose();
         Instance = null;
+    }
+
+    public void SwitchState(PlayerFsmMachine.PlayerStateID stateID)
+    {
+        if (fsmMachine.curState.stateID != (int)stateID)
+        {
+            fsmMachine.Switch((int)stateID);
+        }
     }
 }

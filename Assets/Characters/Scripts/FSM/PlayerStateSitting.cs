@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerStateRun : BaseState
+public class PlayerStateSitting : BaseState
 {
-    public PlayerStateRun(int stateID) : base(stateID)
+    public PlayerStateSitting(int stateID) : base(stateID)
     {
-        this.aniName = "Armature|Running";
+        this.aniName = "Armature|Sitting";
     }
 
     protected override void OnEnter()

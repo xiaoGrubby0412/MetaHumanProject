@@ -6,7 +6,7 @@ using UnityEngine;
 public class BaseFsmMachine
 {
     private Dictionary<int, BaseState> states;
-    private BaseState curState;
+    public BaseState curState;
 
     public BaseFsmMachine()
     {

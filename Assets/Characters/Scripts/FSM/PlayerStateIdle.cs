@@ -5,9 +5,15 @@ using UnityEngine;
 
 public class PlayerStateIdle : BaseState
 {
+    public PlayerStateIdle(int stateID) : base(stateID)
+    {
+        this.aniName = "Armature|Idle";
+    }
+    
     protected override void OnEnter()
     {
         base.OnEnter();
+        Player.Instance.animator.CrossFadeInFixedTime(aniName, 0.1f);
     }
 
     protected override void OnLeave()
@@ -28,14 +34,5 @@ public class PlayerStateIdle : BaseState
     protected override void OnDispose()
     {
         base.OnDispose();
-    }
-
-    public override void OnPlayAnimation()
-    {
-        base.OnPlayAnimation();
-    }
-
-    public PlayerStateIdle(int stateID) : base(stateID)
-    {
     }
 }

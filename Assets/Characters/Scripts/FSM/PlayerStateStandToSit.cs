@@ -7,11 +7,13 @@ public class PlayerStateStandToSit : BaseState
 {
     public PlayerStateStandToSit(int stateID) : base(stateID)
     {
+        this.aniName = "Armature|StandToSit";
     }
 
     protected override void OnEnter()
     {
         base.OnEnter();
+        Player.Instance.animator.CrossFadeInFixedTime(aniName, 0.1f);
     }
 
     protected override void OnLeave()
@@ -32,10 +34,5 @@ public class PlayerStateStandToSit : BaseState
     protected override void OnDispose()
     {
         base.OnDispose();
-    }
-
-    public override void OnPlayAnimation()
-    {
-        base.OnPlayAnimation();
     }
 }

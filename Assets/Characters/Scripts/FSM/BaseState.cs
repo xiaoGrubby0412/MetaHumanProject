@@ -6,6 +6,7 @@ public class BaseState
 {
     public int stateID;
     public bool isPaused;
+    public string aniName;
 
     public BaseState(int stateID)
     {
@@ -21,6 +22,7 @@ public class BaseState
 
     protected virtual void OnEnter()
     {
+        
     }
 
     public void Leave()
@@ -68,15 +70,6 @@ public class BaseState
     }
 
     protected virtual void OnDispose()
-    {
-    }
-
-    public void PlayAnimation()
-    {
-        this.OnPlayAnimation();
-    }
-
-    public virtual void OnPlayAnimation()
     {
     }
 }

@@ -7,7 +7,7 @@ public class PlayerJoystickController : MonoBehaviour
     public AbstractJoystick moveJoystick;
 
     //public GPUSkinningPlayerMono mono;
-    public Animator animator;
+    // public Animator animator;
     public float moveSpeed;
     public float moveJoystickLimit;
 
@@ -277,51 +277,29 @@ public class PlayerJoystickController : MonoBehaviour
     public void StartMove()
     {
         //targetSpeed = 6;
-        AnimatorStateInfo curInfo = animator.GetCurrentAnimatorStateInfo(0);
-        AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
-        if (clipInfo.Length > 1)
-        {
-            Debug.LogError("clipInfo.Length > 1");
-        }
-
-        if (clipInfo.Length > 0 && clipInfo[0].clip.name.Equals("Armature|Idle"))
-        {
-            string aniName = "Armature|Running";
-            animator.CrossFadeInFixedTime(aniName, 0.1f);
-        }
+        Player.Instance.SwitchState(PlayerFsmMachine.PlayerStateID.Running);
     }
 
     public void StopMove()
     {
         //targetSpeed = 0;
-
-        AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
-        if (clipInfo.Length > 1)
-        {
-            Debug.LogError("clipInfo.Length > 1");
-        }
-
-        if (clipInfo.Length > 0 && clipInfo[0].clip.name.Equals("Armature|Running"))
-        {
-            string aniName = "Armature|Idle";
-            animator.CrossFadeInFixedTime(aniName, 0.1f);
-        }
+        Player.Instance.SwitchState(PlayerFsmMachine.PlayerStateID.Idle);
     }
 
 
     // Global.Unit移动控制器，传值给Camera.Unit，拆解相机与控制的强耦合
     private void Move()
     {
-        if (this.animator == null)
-        {
-            //self.modelAnim = GlobalComponent.Instance.Unit.GetComponentInChildren<Animator>();
-            this.animator = Player.Instance.GetComponentInChildren<Animator>();
-        }
-
-        if (this.animator == null)
-        {
-            return;
-        }
+        // if (this.animator == null)
+        // {
+        //     //self.modelAnim = GlobalComponent.Instance.Unit.GetComponentInChildren<Animator>();
+        //     this.animator = Player.Instance.GetComponentInChildren<Animator>();
+        // }
+        //
+        // if (this.animator == null)
+        // {
+        //     return;
+        // }
 
         // 速度大于 2.6 奔跑，0.1~2.6之间行走
 
