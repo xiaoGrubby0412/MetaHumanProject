@@ -102,6 +102,10 @@ public class PlayerJoystickController : MonoBehaviour
     {
         this.Move();
         this._Rotate();
+        if (Input.GetKey(KeyCode.F))
+        {
+            Player.Instance.SwitchState(PlayerFsmMachine.PlayerStateID.StandToSit);
+        }
     }
 
 

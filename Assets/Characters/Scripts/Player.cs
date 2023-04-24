@@ -44,6 +44,15 @@ public class Player : MonoBehaviour
     {
         if (fsmMachine.curState.stateID != (int)stateID)
         {
+            if (fsmMachine.curState.stateID == (int)PlayerFsmMachine.PlayerStateID.Sitting ||
+                fsmMachine.curState.stateID == (int)PlayerFsmMachine.PlayerStateID.StandToSit)
+            {
+                if (stateID == PlayerFsmMachine.PlayerStateID.Idle)
+                {
+                    return;
+                }
+            }
+
             fsmMachine.Switch((int)stateID);
         }
     }
