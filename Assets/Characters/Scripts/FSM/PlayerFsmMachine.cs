@@ -11,6 +11,7 @@ public class PlayerFsmMachine : BaseFsmMachine
         Running = 2,
         Sitting = 4,
         StandToSit = 6,
+        Walk = 7,
     }
     
     public override void OnInit()

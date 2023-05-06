@@ -1,14 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerJoystickController : MonoBehaviour
 {
     public AbstractJoystick moveJoystick;
-
+    public static PlayerJoystickController instance;
+    public bool ifWalk = false;
     //public GPUSkinningPlayerMono mono;
     // public Animator animator;
     public float moveSpeed;
+    public float moveSpeedWalk = 0.3f;
+    public float moveSpeedRun = 10;
     public float moveJoystickLimit;
 
     //相机距离的物体的最近和最远距离
@@ -58,9 +62,25 @@ public class PlayerJoystickController : MonoBehaviour
         }
     }
 
+    public void SetMoveState(bool ifWalk)
+    {
+        this.ifWalk = ifWalk;
+        SetSpeedByMoveState();
+    }
+
+    public void SetSpeedByMoveState()
+    {
+        this.moveSpeed = ifWalk ? moveSpeedWalk : moveSpeedRun;
+    }
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
-        this.moveSpeed = 10.0f;
+        SetSpeedByMoveState();
         this.moveJoystickLimit = 0.01f;
 
 
@@ -102,7 +122,13 @@ public class PlayerJoystickController : MonoBehaviour
     {
         this.Move();
         this._Rotate();
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            ifWalk = !ifWalk;
+            SetSpeedByMoveState();
+        }
+
+        if (Input.GetKeyDown(KeyCode.F))
         {
             Player.Instance.SwitchState(PlayerFsmMachine.PlayerStateID.StandToSit);
         }
@@ -281,7 +307,18 @@ public class PlayerJoystickController : MonoBehaviour
     public void StartMove()
     {
         //targetSpeed = 6;
-        Player.Instance.SwitchState(PlayerFsmMachine.PlayerStateID.Running);
+        if (ifWalk)
+        {
+            //Debug.Log("IfWalk == " + ifWalk);
+            Player.Instance.SwitchState(PlayerFsmMachine.PlayerStateID.Walk);
+        }
+        else
+        {
+            //Debug.Log("IfWalk == " + ifWalk);
+            Player.Instance.SwitchState(PlayerFsmMachine.PlayerStateID.Running);
+        }
+
+
     }
 
     public void StopMove()
@@ -477,5 +514,10 @@ public class PlayerJoystickController : MonoBehaviour
         //
         // this.animator.SetFloat("Speed", _animationBlend);
         // this.animator.SetFloat("MotionSpeed", 1);
+    }
+
+    private void OnDestroy()
+    {
+        instance = null;
     }
 }

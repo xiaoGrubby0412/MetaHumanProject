@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
         fsmMachine.AddState(new PlayerStateRun((int)PlayerFsmMachine.PlayerStateID.Running));
         fsmMachine.AddState(new PlayerStateSitting((int)PlayerFsmMachine.PlayerStateID.Sitting));
         fsmMachine.AddState(new PlayerStateStandToSit((int)PlayerFsmMachine.PlayerStateID.StandToSit));
+        fsmMachine.AddState(new PlayerStateWalk((int)PlayerFsmMachine.PlayerStateID.Walk));
         fsmMachine.SetInitState((int)PlayerFsmMachine.PlayerStateID.Idle);
     }
 

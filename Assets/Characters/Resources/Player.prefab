@@ -304,6 +304,7 @@ MonoBehaviour:
   trackingOriginTransform: {fileID: 8089315261581497489}
   trackingInterliningTransform: {fileID: 8089315263220098342}
   hmdTransform: {fileID: 8089315263397371354}
+  animator: {fileID: 0}
 --- !u!114 &7663861646068705863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,8 +318,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveJoystick: {fileID: 0}
-  animator: {fileID: 0}
+  ifWalk: 0
   moveSpeed: 5
+  moveSpeedWalk: 2
+  moveSpeedRun: 10
   moveJoystickLimit: 0.01
   thirdCamMinHeight: 0
   rotSpeed: 10
